@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d0b">
+<title>ROYAL HOUSE PVC | Windows, Doors & Hardware</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23100d0b'/%3E%3Cpath d='M15 38 L8 15 L29 28 L39 7 L50 27 L70 8 L72 29 L92 16 L84 39 Z' fill='%23c49a63'/%3E%3Ctext x='50' y='82' font-size='57' text-anchor='middle' font-family='Georgia' fill='%23f1dfc2'>R</text%3E%3C/svg%3E">
+<style>
+:root{--gold:#c49a63;--gold-light:#ead0a5;--brown:#79583d;--black:#100d0b;--cream:#f6efe5;--muted:#c6b9a8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{font-family:Georgia,'Times New Roman',serif;background:var(--black);color:var(--cream);line-height:1.7;overflow-x:hidden;cursor:none}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(10,8,7,.94),rgba(10,8,7,.67)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85') center/cover no-repeat}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(circle at 80% 15%,rgba(196,154,99,.13),transparent 35%)}
+a{color:inherit;text-decoration:none}
+button,a{cursor:none}
+.cursor{position:fixed;left:0;top:0;width:22px;height:22px;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);background:linear-gradient(135deg,#168bff,#a86cff,#79e6ff);box-shadow:0 0 20px #7c8cffaa;mix-blend-mode:screen;transition:width .25s,height .25s}
+.cursor-ring{position:fixed;left:0;top:0;width:42px;height:42px;border:1px solid #8acbff99;border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%)}
+header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:17px 7%;background:rgba(12,10,9,.72);backdrop-filter:blur(16px);border-bottom:1px solid #c49a6333}
+.brand{font-size:1.05rem;letter-spacing:3px;color:var(--gold-light);font-weight:bold}
+.brand span{display:block;font-size:.65rem;letter-spacing:5px;text-align:center;color:var(--muted)}
+nav{display:flex;gap:25px;font-family:Arial,sans-serif;font-size:.83rem}
+nav a{color:#e7ded2;transition:color .3s}nav a:hover{color:var(--gold-light)}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:150px 7% 90px}
+.hero-inner{max-width:950px;animation:rise 1.4s ease both}
+.crown{width:100px;height:68px;margin:0 auto 12px;display:block}
+.eyebrow{color:var(--gold-light);letter-spacing:5px;font: .75rem Arial,sans-serif;text-transform:uppercase}
+h1{font-size:clamp(2.7rem,7vw,6.2rem);line-height:1.08;letter-spacing:4px;margin:17px 0;color:var(--gold);animation:nameGlow 7s ease-in-out infinite alternate}
+@keyframes nameGlow{0%,25%{color:var(--gold);text-shadow:0 0 0 transparent}70%,100%{color:#fff;text-shadow:0 0 24px #fff2}}
+.hero p{max-width:700px;margin:0 auto 27px;color:#ded3c5;font:1rem/1.9 Arial,sans-serif}
+.btn{display:inline-block;border:1px solid var(--gold);padding:12px 25px;color:var(--gold-light);letter-spacing:1px;transition:.3s;background:#17110c99}
+.btn:hover{background:var(--gold);color:#17110c;transform:translateY(-3px)}
+section{padding:90px 7%}
+.section-head{text-align:center;max-width:780px;margin:0 auto 42px}
+.kicker{color:var(--gold);font: .75rem Arial,sans-serif;letter-spacing:4px;text-transform:uppercase}
+h2{font-size:clamp(2rem,4vw,3.3rem);font-weight:normal;margin:10px 0 12px}
+.section-head p{color:var(--muted);font: .98rem/1.8 Arial,sans-serif}
+.glass{background:rgba(16,13,11,.76);border:1px solid #c49a6333;backdrop-filter:blur(14px)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+.about-image{min-height:390px;background:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1100&q=85') center/cover;border:1px solid #c49a6355}
+.about-copy{padding:35px}
+.about-copy h3{font-size:1.8rem;color:var(--gold-light);margin-bottom:15px}
+.about-copy p{color:#d5c9ba;font: .96rem/1.9 Arial,sans-serif;margin-bottom:13px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.product{overflow:hidden;background:rgba(18,14,11,.86);border:1px solid #c49a6330;transition:transform .35s,border-color .35s}
+.product:hover{transform:translateY(-8px);border-color:var(--gold)}
+.product img{width:100%;height:230px;object-fit:cover;display:block;transition:transform .6s}
+.product:hover img{transform:scale(1.045)}
+.product-copy{padding:20px}
+.product h3{font-size:1.2rem;color:var(--gold-light);margin-bottom:7px}
+.product p{font: .88rem/1.7 Arial,sans-serif;color:var(--muted)}
+.translated{margin-top:9px;padding-top:9px;border-top:1px solid #c49a6330;direction:rtl;text-align:right;font: .9rem/1.8 Arial,sans-serif;color:#e6d7c5}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{padding:28px;text-align:center}
+.feature .symbol{font-size:2rem;color:var(--gold);margin-bottom:10px}
+.feature h3{color:var(--gold-light);margin-bottom:8px}
+.feature p{color:var(--muted);font: .9rem/1.8 Arial,sans-serif}
+.contact{text-align:center}
+.contact-panel{max-width:800px;margin:auto;padding:45px 25px}
+.contact-panel p{color:var(--muted);font:1rem/1.9 Arial,sans-serif;margin:12px auto 24px}
+footer{padding:28px 7%;text-align:center;border-top:1px solid #c49a6333;color:#b9a895;font: .8rem Arial,sans-serif}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+.reveal.visible{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@media(max-width:850px){nav{gap:12px;font-size:.72rem}.about{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}}
+@media(max-width:560px){body{cursor:auto}a,button{cursor:pointer}.cursor,.cursor-ring{display:none}header{padding:13px 5%;align-items:flex-start;gap:12px;flex-direction:column}nav{flex-wrap:wrap}.hero{padding-top:170px}.grid{grid-template-columns:1fr}section{padding:70px 5%}.product img{height:250px}}
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div><div class="cursor-ring" id="ring"></div>
+<header>
+<a class="brand" href="#home">ROYAL HOUSE <span>PVC</span></a>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#windows">Windows</a><a href="#doors">Doors</a><a href="#handles">Handles</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<svg class="crown" viewBox="0 0 120 80" aria-label="Royal House crown logo"><path d="M8 20 L28 38 L36 9 L58 35 L72 3 L87 35 L108 12 L111 48 L12 48 Z" fill="#c49a63"/><path d="M13 54 H109 M15 61 H107" stroke="#4d3325" stroke-width="4"/></svg>
+<div class="eyebrow">Craftsmanship • Comfort • Quality</div>
+<h1>ROYAL HOUSE</h1>
+<p>Premium PVC windows, balcony doors and elegant hardware — designed to bring comfort, beauty and lasting value to your home.</p>
+<p class="translated">شبابيك PVC وأبواب بلكونات وإكسسوارات راقية، مصممة لتمنح منزلك الراحة والجمال والقيمة طويلة الأمد.</p>
+<a class="btn" href="#windows">Explore Our Products&nbsp; ↘</a>
+</div>
+</section>
+<section id="about">
+<div class="about reveal">
+<div class="about-image" role="img" aria-label="Modern home with large windows"></div>
+<div class="about-copy glass">
+<div class="kicker">Who We Are</div><h3>Made for modern living.</h3>
+<p>At Royal House PVC, we believe that every detail matters. Windows, doors and hardware should look beautiful and work reliably every day.</p>
+<p>Our product range focuses on clean design, practical function and a refined finish for modern homes and projects.</p>
+<div class="translated">في رويال هاوس PVC، نؤمن أن كل تفصيلة مهمة. يجب أن تتميز الشبابيك والأبواب والإكسسوارات بالشكل الجميل والأداء الموثوق كل يوم.</div>
+<div class="translated">تركز منتجاتنا على التصميم البسيط والوظيفة العملية والتشطيب الأنيق للمنازل والمشروعات الحديثة.</div>
+</div>
+</div>
+</section>
+<section id="windows">
+<div class="section-head reveal"><div class="kicker">01 / Windows</div><h2>Windows that welcome the light</h2><p>Discover practical, modern window styles for homes and workspaces.</p><p class="translated">اكتشف تصميمات شبابيك عصرية وعملية للمنازل وأماكن العمل.</p></div>
+<div class="grid">
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Large modern house windows" loading="lazy"><div class="product-copy"><h3>Modern Picture Windows</h3><p>Wide glass areas create a bright and open atmosphere.</p><div class="translated">مساحات زجاجية واسعة تمنح المكان إضاءة وإحساسًا بالاتساع.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Contemporary window design" loading="lazy"><div class="product-copy"><h3>Contemporary Frames</h3><p>Clean lines complement modern architectural styles.</p><div class="translated">خطوط بسيطة تناسب التصميمات المعمارية الحديثة.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Bright room with windows" loading="lazy"><div class="product-copy"><h3>Bright Living Spaces</h3><p>Bring daylight into the rooms where life happens.</p><div class="translated">أدخل ضوء النهار إلى الغرف التي تقضي فيها يومك.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80" alt="Elegant residential windows" loading="lazy"><div class="product-copy"><h3>Elegant Home Windows</h3><p>A balanced look for apartments, villas and offices.</p><div class="translated">مظهر متناسق للشقق والفيلات والمكاتب.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Window and interior detail" loading="lazy"><div class="product-copy"><h3>Made for Everyday Use</h3><p>Thoughtful details help make daily use convenient.</p><div class="translated">تفاصيل مدروسة تساعد على سهولة الاستخدام اليومي.</div></div></article>
+</div>
+</section>
+<section id="doors">
+<div class="section-head reveal"><div class="kicker">02 / Balcony Doors</div><h2>Open your home to more</h2><p>Balcony door styles that connect indoor comfort with outdoor views.</p><p class="translated">تصميمات أبواب بلكونات تجمع بين راحة الداخل والإطلالة الخارجية.</p></div>
+<div class="grid">
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Glass balcony doors" loading="lazy"><div class="product-copy"><h3>Sliding Balcony Doors</h3><p>A space-conscious option with a modern appearance.</p><div class="translated">اختيار عملي يوفر المساحة بمظهر عصري.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Modern patio entrance" loading="lazy"><div class="product-copy"><h3>Patio Door Designs</h3><p>Enjoy a smooth transition to your balcony or garden.</p><div class="translated">استمتع بانتقال سلس إلى البلكونة أو الحديقة.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Bright glass doorway" loading="lazy"><div class="product-copy"><h3>Light-Filled Entrances</h3><p>Glass brings daylight and a sense of openness.</p><div class="translated">يسمح الزجاج بدخول الضوء ويمنح المكان اتساعًا.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=800&q=80" alt="Modern home exterior" loading="lazy"><div class="product-copy"><h3>Modern Home Style</h3><p>Simple shapes pair well with many home designs.</p><div class="translated">أشكال بسيطة تناسب تصميمات منازل مختلفة.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Contemporary interior and doors" loading="lazy"><div class="product-copy"><h3>Everyday Function</h3><p>Choose a door style to suit your room and layout.</p><div class="translated">اختر تصميم الباب المناسب لمساحة منزلك وتوزيع الغرف.</div></div></article>
+</div>
+</section>
+<section id="handles">
+<div class="section-head reveal"><div class="kicker">03 / Handles & Hardware</div><h2>The beauty is in the details</h2><p>Carefully selected handles and fittings complete the look of your windows and doors.</p><p class="translated">المقابض والإكسسوارات المختارة بعناية تكمل شكل الشبابيك والأبواب.</p></div>
+<div class="grid">
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="Door handle detail" loading="lazy"><div class="product-copy"><h3>Classic Door Handles</h3><p>A timeless profile for a neat, finished look.</p><div class="translated">تصميم كلاسيكي يمنح الباب مظهرًا مرتبًا ومكتملًا.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Modern home fittings" loading="lazy"><div class="product-copy"><h3>Modern Finishes</h3><p>Finishes can complement the wider interior palette.</p><div class="translated">يمكن أن تتناسق التشطيبات مع ألوان الديكور.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Window hardware in modern home" loading="lazy"><div class="product-copy"><h3>Window Accessories</h3><p>Practical components support everyday operation.</p><div class="translated">مكونات عملية تساعد على تشغيل الشباك يوميًا.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80" alt="Elegant home details" loading="lazy"><div class="product-copy"><h3>Clean, Minimal Details</h3><p>Small details make a noticeable difference.</p><div class="translated">التفاصيل الصغيرة تصنع فرقًا واضحًا.</div></div></article>
+<article class="product reveal"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80" alt="Handle and fitting inspiration" loading="lazy"><div class="product-copy"><h3>Comfortable Grip</h3><p>Choose a shape that feels comfortable in daily use.</p><div class="translated">اختر شكلًا مريحًا في الاستخدام اليومي.</div></div></article>
+</div>
+</section>
+<section>
+<div class="section-head reveal"><div class="kicker">Why Royal House</div><h2>Designed around your space</h2></div>
+<div class="features">
+<div class="feature glass reveal"><div class="symbol">✧</div><h3>Refined Design</h3><p>Styles that complement modern spaces.</p><div class="translated">تصميمات تناسب المساحات الحديثة.</div></div>
+<div class="feature glass reveal"><div class="symbol">◇</div><h3>Practical Choices</h3><p>Products selected with everyday use in mind.</p><div class="translated">منتجات تراعي احتياجات الاستخدام اليومي.</div></div>
+<div class="feature glass reveal"><div class="symbol">♧</div><h3>Attention to Detail</h3><p>A polished look begins with the small things.</p><div class="translated">المظهر المتقن يبدأ من التفاصيل الصغيرة.</div></div>
+</div>
+</section>
+<section id="contact" class="contact">
+<div class="contact-panel glass reveal"><div class="kicker">Let's Talk</div><h2>Plan your next project with us</h2><p>Tell us what you need for your home or project. Our team can help you explore suitable window, door and hardware options.</p><div class="translated">أخبرنا بما تحتاجه لمنزلك أو مشروعك، وسنساعدك في استكشاف الخيارات المناسبة للشبابيك والأبواب والإكسسوارات.</div><br><a class="btn" href="mailto:info@royalhousepvc.com">Contact Royal House</a><p style="font-size:.78rem">Replace this email with the company's real contact details before publishing.</p></div>
+</section>
+</main>
+<footer>© <span id="year"></span> ROYAL HOUSE PVC. All rights reserved.</footer>
+<script>
+const cursor=document.getElementById('cursor');
+const ring=document.getElementById('ring');
+let mx=innerWidth/2,my=innerHeight/2,rx=mx,ry=my;
+window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px'});
+function animateRing(){rx+=(mx-rx)*.16;ry+=(my-ry)*.16;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animateRing)}
+animateRing();
+document.querySelectorAll('a,.product').forEach(el=>{el.addEventListener('mouseenter',()=>{cursor.style.width='34px';cursor.style.height='34px'});el.addEventListener('mouseleave',()=>{cursor.style.width='22px';cursor.style.height='22px'})});
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
